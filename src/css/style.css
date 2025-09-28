@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-size: 16px;
+    background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364);
+    background-size: 400% 400%;
+    animation: gradientMove 7s ease infinite;
+    color: #ffffff;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    height: auto;
+}
+
+/* PROFILE-HEADER */
+.profile-header {
+    text-align: center;
+    font-family: var(--font-title);
+}
+
+.profile-header .user-name-profile .title {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.profile-header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+/* NAVIGATION */
+.navigation {
+    width: 100%;
+    max-width: 590px;
+    margin: 0 auto;
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.navigation ul li a {
+    color: #ffffff;
+    background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364);
+    border-radius: 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+.navigation ul li a:hover {
+    transform: scale(1.02);
+}
+
+.navigation ul li a i {
+    font-size: 34px;
+}
+
+.navigation ul li a p {
+    margin: 0 auto;
+    font-family: var(--font-text);
+}
+
+/* RODAPE */
+.rodape {
+    font-family: var(--font-text);
+}
