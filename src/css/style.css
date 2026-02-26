@@ -2,10 +2,10 @@
 
 body {
     font-size: 16px;
-    background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364);
+    background: var(--color-bg);
     background-size: 400% 400%;
     animation: gradientMove 7s ease infinite;
-    color: #ffffff;
+    color: var(--color-text);
 }
 
 @keyframes gradientMove {
@@ -42,12 +42,15 @@ body {
 .profile-header .user-name-profile .title {
     font-weight: 400;
     font-size: 16px;
+    color: var(--color-title);
 }
 
 .profile-header img {
     width: 150px;
     height: 150px;
     border-radius: 100%;
+    border: var(--avatar-border);
+    box-shadow: var(--avatar-shadow);
 }
 
 /* NAVIGATION */
@@ -65,8 +68,9 @@ body {
 }
 
 .navigation ul li a {
-    color: #ffffff;
-    background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364);
+    color: var(--color-text);
+    background: var(--color-card-bg);
+    border: var(--card-border);
     border-radius: 10px;
     text-decoration: none;
     display: flex;
@@ -77,10 +81,14 @@ body {
 
 .navigation ul li a:hover {
     transform: scale(1.02);
+    background: var(--link-hover-bg);
+    border-color: var(--link-hover-border);
+    filter: var(--link-hover-filter);
 }
 
 .navigation ul li a i {
     font-size: 34px;
+    color: var(--color-icon);
 }
 
 .navigation ul li a p {
@@ -91,4 +99,57 @@ body {
 /* RODAPE */
 .rodape {
     font-family: var(--font-text);
+    color: var(--color-footer);
 }
+
+/* em-breve.html */
+.container-em-breve {
+			min-height: 100vh;
+			display: grid;
+			place-items: center;
+			font-family: Inter, Arial, sans-serif;
+			background: linear-gradient(160deg, #0b1220, #1e293b);
+			color: #e2e8f0;
+			padding: 24px;
+		}
+
+		.card-em-breve {
+			width: 100%;
+			max-width: 520px;
+			background: rgba(15, 23, 42, 0.85);
+			border: 1px solid rgba(148, 163, 184, 0.35);
+			border-radius: 16px;
+			padding: 36px 28px;
+			text-align: center;
+			box-shadow: 0 14px 36px rgba(2, 6, 23, 0.45);
+			backdrop-filter: blur(4px);
+		}
+
+		.card-em-breve h1 {
+			font-size: clamp(1.6rem, 4vw, 2rem);
+			margin-bottom: 12px;
+			color: #f8fafc;
+		}
+
+		.card-em-breve p {
+			font-size: 1rem;
+			line-height: 1.6;
+			color: #cbd5e1;
+		}
+
+		.card-em-breve a {
+			display: inline-block;
+			margin-top: 24px;
+			text-decoration: none;
+			color: #0f172a;
+			background: #38bdf8;
+			border-radius: 10px;
+			padding: 12px 18px;
+			font-weight: 600;
+			transition: transform 0.2s ease, filter 0.2s ease;
+		}
+
+		.card-em-breve a:hover {
+			transform: translateY(-2px);
+			filter: brightness(1.05);
+		}
