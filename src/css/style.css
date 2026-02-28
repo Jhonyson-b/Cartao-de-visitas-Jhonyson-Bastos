@@ -51,6 +51,7 @@ body {
     border-radius: 100%;
     border: var(--avatar-border);
     box-shadow: var(--avatar-shadow);
+    object-fit: cover;
 }
 
 /* NAVIGATION */
