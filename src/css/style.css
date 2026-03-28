@@ -101,9 +101,10 @@ body {
 .rodape {
     font-family: var(--font-text);
     color: var(--color-footer);
+    text-align: center;
 }
 
-/* em-breve.html */
+/* em-breve.html 
 .container-em-breve {
 			min-height: 100vh;
 			display: grid;
@@ -154,3 +155,4 @@ body {
 			transform: translateY(-2px);
 			filter: brightness(1.05);
 		}
+            */
